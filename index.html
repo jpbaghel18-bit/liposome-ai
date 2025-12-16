@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Liposome Size & PDI Predictor</title>
+</head>
+<body style="font-family: Arial; padding:20px;">
+  <h2>Liposome AI Predictor</h2>
+
+  <label>Cholesterol (%):</label><br>
+  <input type="number" id="chol"><br><br>
+
+  <label>Phospholipid (%):</label><br>
+  <input type="number" id="phos"><br><br>
+
+  <button onclick="predict()">Predict</button>
+
+  <p id="result"></p>
+
+  <script>
+    function predict(){
+      document.getElementById("result").innerHTML =
+      "Predicted Size: 120 nm<br>Predicted PDI: 0.25";
+    }
+  </script>
+</body>
+</html>
